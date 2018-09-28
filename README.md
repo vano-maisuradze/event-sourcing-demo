@@ -24,7 +24,10 @@ Microservices and Event Sourcing demo for [DevOps Con Tbilisi 2018](http://devop
 	"Currency": 981
 }
 ```
-Note that, value in AccountId is taken from EventStore as we want to credit money on that account. So in your case, AccountId will be different. If request was successful, you should see another event in EventStore stream (MoneyCredited).
+Note that, value in AccountId is taken from EventStore as we want to credit money on that account. So in your case, AccountId will be different.
+
+If request was successful, you should see another event in EventStore stream (MoneyCredited).
+
 6. Create another POST request to debit money from account /api/bankaccount/debit:
 ```json
 {
