@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "aa6fa9af-fb47-45e1-9f81-6d4159a430d8",
+		"name": "Bank account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Iban\": \"GE29NB0000000101904917\",\n\t\"UserId\": \"32b76275-4acb-4755-bb6a-e153b9fd8827\",\n\t\"Currency\": 981\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7001/api/bankaccount/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"bankaccount",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Credit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"AccountId\": \"40652cef-f0ba-468e-a311-69eb6e58e13b\",\n\t\"Amount\": 100,\n\t\"Currency\": 981\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7001/api/bankaccount/credit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"bankaccount",
+						"credit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Debit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"AccountId\": \"b72623ef-fbce-4b60-bc1c-5286aa216707\",\n\t\"Amount\": 70,\n\t\"Currency\": 981\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7001/api/bankaccount/debit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"bankaccount",
+						"debit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
