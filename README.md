@@ -32,6 +32,13 @@ Note that, value in AccountId is taken from EventStore as we want to credit mone
 	"Amount": 70,
 	"Currency": 981
 }
-```
+``` 
+
+----
 
 You can play with Credit/Debit requests and see how new events are generated. You can also play with code and make your own changes.
+
+----
+
+
+[Here](https://github.com/vano-maisuradze/event-sourcing-demo/blob/master/Bank%20account.postman_collection.json) is the [Postman](https://www.getpostman.com/) requsts collection, so you can import and directly use it. 
